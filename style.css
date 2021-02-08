@@ -12,6 +12,9 @@
 
 #output {
   background-color: white;
+  width: 85vw;
+  height: 25px;
+  display: block;
 }
 
 button {
