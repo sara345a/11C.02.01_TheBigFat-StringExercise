@@ -1,10 +1,13 @@
 "use strict"
 
 window.addEventListener("DOMContentLoaded", start);
+let finalOutput = "";
+
 
 //Start
 function start() {
     console.log("start");
+    document.querySelector("#clear").addEventListener("click", clear);
     document.querySelector("#genoutput").addEventListener("click", readOptionInput);
 }
 
@@ -25,7 +28,7 @@ function readOptionInput() {
 
 const replace = readInput.substring(firstSpace + 1);
 
- let finalOutput = "";
+
    //if-statements
    if (operatorInput.value === "opt1") {
     finalOutput = readInput.substring(0, 1).toUpperCase() + readInput.substring(1);
@@ -74,6 +77,13 @@ const replace = readInput.substring(firstSpace + 1);
 }
 
 function showOutput() {
-    let finalOutput = "";
+    console.log(finalOutput);
+
     document.querySelector("#output").value = finalOutput.toString();
+}
+
+
+function clear() {
+    console.log("clearOutput");
+    document.querySelector("#output").innerHTML = "";
 }

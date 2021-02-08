@@ -1,5 +1,5 @@
 #interface {
-  background-color: rgb(124, 170, 170);
+  background-color: rgb(124 170 136);
   width: 700px;
   border-radius: 0.4em;
   font-family: "Courier New", Courier, monospace;
@@ -12,9 +12,6 @@
 
 #output {
   background-color: white;
-  width: 85vw;
-  height: 25px;
-  display: block;
 }
 
 button {
